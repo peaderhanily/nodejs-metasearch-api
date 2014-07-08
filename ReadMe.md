@@ -33,7 +33,12 @@ List of Dependancies
 
 API Overview
 -------------
-<url>/?q=<query>&eng[engine]=<numOfResults>&resType=<typesOfResult(s)> &keys[apiKey(s)]=&formType=<resultFormat>
+
+         http://localhost:8080?q=\<query\> 
+         &eng[engine]=\<engine&NumOfResults\>
+         &resType=\<typesOfResult(s)\>
+         &keys[apiKey(s)]=\<API KEYS\>
+         &formType=\<resultFormat\>
 
 ### General Rules:
     1. Query + Api Keys are mandatory (unless you specify Blekko to search only)
