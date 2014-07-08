@@ -35,22 +35,22 @@ API Overview
 -------------
 <url>/?q=<query>&eng[engine]=<numOfResults>&resType=<typesOfResult(s)> &keys[apiKey(s)]=&formType=<resultFormat>
 
-###General Rules :
+### General Rules:
     1. Query + Api Keys are mandatory (unless you specify Blekko to search only)
     2. Defaults are set to use everything, i.e. if you leave out result type it tries to get everything
     3. Be specific in what you want to return and query will be faster
 
 
-###<url> : 
+### \<url\>:
     This is the base URL e.g. https://localhost.com/
 
 
-###<query> : 
+### \<query\>:
     This is the query must be a html encoded string surronded in double quotes
     https://localhost.com/?q=Big Blue
 
 
-###<engines> :
+### \<engines\>:
     Each engine must be specified e.g. &eng[goog]&eng[blek]
     You can also specify the amount of results to return e.g &eng[goog]=100
     Specify the amount of results to return in 10's i.e. 60,70,80
@@ -72,7 +72,7 @@ API Overview
         2. Choosing to return 100 search results for each engine ie 300 results overall will slow down your query
 
 
-###<typesOfResult(s)> : 
+### \<typesOfResult(s)\>: 
     The types of results must be specified next.
     These are the different list of results types created from the engines
     Each list of the results that were returned by the individual search engines will also be returned
@@ -89,7 +89,7 @@ API Overview
             https://faas.stage1.mybluemix.net/q?=IBM&eng[goog]=100&eng[bing]=100&resType=rrf+kmeans
 
 
-###<apiKey(s)> : 
+### \<apiKey(s)\>: 
     These are the API keys you have need will need to get before you try a request
     If left blank it will throw an error
 
@@ -115,7 +115,7 @@ API Overview
 
 
 
-###<resultFormat> : 
+### \<resultFormat\>: 
     This is the format of the result you want to be returned
     At the momment the API supports the only JSON and XML
     but let me know what else you'd like an I'll try to accomadate it
@@ -134,7 +134,7 @@ Response
 
 Generally if you request the full feature set of this API your response will come in the following format
 
-###Response in JSON
+### Response in JSON:
     {
       msg : "Successful Results",
       reqDetails : //An object with the Details of your Request,
@@ -148,7 +148,7 @@ Generally if you request the full feature set of this API your response will com
       bingRelated: //An array of Realated searches from the Bing realted search terms api
     }
 
-###Resonse in XML
+### Resonse in XML:
     <?xml version="1.0" encoding="UTF-8"?>
     <results> //Root Node
       <msg>Successful Results</msg>
