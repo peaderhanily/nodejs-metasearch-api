@@ -71,10 +71,10 @@ API Overview
         For all 3 use all e.g &eng[all]
 
         Example:
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[all]=100 //Gets 100 results from each search engine
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[all]=60 //Gets 60 results from each engine
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[goog]=10&eng[bing]=10 //Gets 10 results from google bing
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[blek]=100 //
+            https://localhost.com/q?=IBM&eng[all]=100 //Gets 100 results from each search engine
+            https://localhost.com/q?=IBM&eng[all]=60 //Gets 60 results from each engine
+            https://localhost.com/q?=IBM&eng[goog]=10&eng[bing]=10 //Gets 10 results from google bing
+            https://localhost.com/q?=IBM&eng[blek]=100 //
 
     Note: 
         1. Choosing different amounts for each engine e.g. bing[30] and goog[60] may effect aggregation and k-means clustering
@@ -94,8 +94,8 @@ API Overview
         For all result types to be returned use all
 
         Example: 
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[all]=100resType=all
-            https://faas.stage1.mybluemix.net/q?=IBM&eng[goog]=100&eng[bing]=100&resType=rrf+kmeans
+            https://localhost.com/q?=IBM&eng[all]=100resType=all
+            https://localhost.com/q?=IBM&eng[goog]=100&eng[bing]=100&resType=rrf+kmeans
 
 
 ### \<apiKey(s)\>: 
@@ -118,9 +118,9 @@ API Overview
     &keys[bing]=APIkey
 
         Example: 
-            https://faas.stage1.mybluemix.net/q?="IBM"&eng[all]&resType=all&keys[goog]=CX+APIkey&keys[bing]=APIKey
-            https://faas.stage1.mybluemix.net/q?="IBM"&eng[goog]=100&resType=rrf+kMeans&keys[goog]=CX+APIkey
-            https://faas.stage1.mybluemix.net/q?="IBM"&eng[blek]&resType=combMNZ /*Key not needed/*
+            https://localhost.com/q?="IBM"&eng[all]&resType=all&keys[goog]=CX+APIkey&keys[bing]=APIKey
+            https://localhost.com/q?="IBM"&eng[goog]=100&resType=rrf+kMeans&keys[goog]=CX+APIkey
+            https://localhost.com/q?="IBM"&eng[blek]&resType=combMNZ /*Key not needed/*
 
 
 
@@ -134,8 +134,8 @@ API Overview
     If left blank it defaults to json
 
         Example:
-        https://faas.stage1.mybluemix.net/q?="IBM"&eng[all]&resType=all&keys[goog]=CX+APIkey&keys[bing]=APIKey&formType=xml
-        https://faas.stage1.mybluemix.net/q?="IBM"&eng[goog]=100&resType=rrf+kMeans&keys[goog]=CX+APIkey&formType=json
+        https://localhost.com/q?="IBM"&eng[all]&resType=all&keys[goog]=CX+APIkey&keys[bing]=APIKey&formType=xml
+        https://localhost.com/q?="IBM"&eng[goog]=100&resType=rrf+kMeans&keys[goog]=CX+APIkey&formType=json
 
 
 Response
